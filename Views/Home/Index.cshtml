@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Alacak Verecek Takip Sistemi</h1>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p class="lead">Hoş geldiniz, @User.Identity.Name!</p>
+        <a class="btn btn-primary" asp-controller="Customer" asp-action="Index">Müşteriler</a>
+        <a class="btn btn-secondary" asp-controller="Debt" asp-action="Index">Borç/Alacak</a>
+    }
+    else
+    {
+        <p>Sistemi kullanmak için giriş yapın veya kayıt olun.</p>
+        <a class="btn btn-primary" asp-controller="Account" asp-action="Login">Giriş Yap</a>
+        <a class="btn btn-success" asp-controller="Account" asp-action="Register">Kayıt Ol</a>
+    }
+</div>

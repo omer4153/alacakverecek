@@ -1,0 +1,42 @@
+@model alacakverecektakip.Models.Debt
+@{
+    ViewData["Title"] = "Yeni Borç Ekle";
+    var customers = ViewBag.Customers as List<alacakverecektakip.Models.Customer>;
+}
+
+<h2>Yeni Borç Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Müşteri</label>
+        <select asp-for="CustomerId" class="form-control">
+            @foreach (var customer in customers)
+            {
+                <option value="@customer.Id">@customer.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Amount"></label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Type"></label>
+        <select asp-for="Type" class="form-control">
+            <option value="Alacak">Alacak</option>
+            <option value="Verecek">Verecek</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TransactionDate"></label>
+        <input asp-for="TransactionDate" type="date" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Kaydet</button>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary mt-2">Geri Dön</a>

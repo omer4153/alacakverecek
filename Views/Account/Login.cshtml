@@ -1,0 +1,20 @@
+@model alacakverecektakip.ViewModels.LoginViewModel
+
+<h2>Giriş Yap</h2>
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <input asp-for="RememberMe" type="checkbox" /> Beni Hatırla
+    </div>
+    <button type="submit">Giriş</button>
+</form>
+<a asp-action="Register">Hesabın yok mu? Kayıt ol</a>

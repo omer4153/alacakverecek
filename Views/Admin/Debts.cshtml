@@ -1,0 +1,31 @@
+@model IEnumerable<alacakverecektakip.Models.Customer>
+
+    @{
+        ViewData["Title"] = "Müşteriler";
+    }
+
+    <h2>Müşteri Listesi</h2>
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Telefon</th>
+                <th>Email</th>
+                <th>Eklenme Tarihi</th>
+                <th>Kullanıcı ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.Name</td>
+                    <td>@customer.Phone</td>
+                    <td>@customer.Email</td>
+                    <td>@customer.CreatedAt.ToString("dd.MM.yyyy")</td>
+                    <td>@customer.UserId</td>
+                </tr>
+            }
+        </tbody>
+    </table>

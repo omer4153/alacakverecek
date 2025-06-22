@@ -1,0 +1,20 @@
+@model alacakverecektakip.Models.Customer
+
+@{
+    ViewData["Title"] = "Müþteri Sil";
+}
+
+<h2>Müþteri Sil</h2>
+
+<h4>Bu müþteriyi silmek istediðinizden emin misiniz?</h4>
+<div>
+    <strong>Adý:</strong> @Model.Name<br />
+    <strong>Telefon:</strong> @Model.Phone<br />
+    <strong>Email:</strong> @Model.Email<br />
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger mt-3">Evet, Sil</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Ýptal</a>
+</form>

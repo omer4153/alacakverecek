@@ -1,0 +1,21 @@
+﻿@model alacakverecektakip.Models.Debt
+
+@{   ViewData["Title"] = "Borç Sil";
+}
+
+<h2>Borcu Sil</h2>
+
+<p>Bu kaydı silmek istediğinize emin misiniz?</p>
+
+<div>
+    <strong>Müşteri:</strong> @Model.Customer?.Name <br />
+    <strong>Tutar:</strong> @Model.Amount ₺<br />
+    <strong>Tip:</strong> @Model.Type <br />
+    <strong>Tarih:</strong> @Model.TransactionDate.ToShortDateString() <br />
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger mt-3">Evet, Sil</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">İptal</a>
+</form>
