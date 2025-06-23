@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using alacakverecektakip.Data;
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL; // Bu satýr þart deðil ama Intellisense için yardýmcý olur
+
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -65,3 +65,11 @@ C:\Users\games\OneDrive\Masaüstü\alacakverecek\obj\Debug\net6.0\refint\alacakv
 C:\Users\games\OneDrive\Masaüstü\alacakverecek\obj\Debug\net6.0\alacakverecektakip.pdb
 C:\Users\games\OneDrive\Masaüstü\alacakverecek\obj\Debug\net6.0\alacakverecektakip.genruntimeconfig.cache
 C:\Users\games\OneDrive\Masaüstü\alacakverecek\obj\Debug\net6.0\ref\alacakverecektakip.dll
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\publish\web.config
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\publish\alacakverecektakip.deps.json
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\publish\alacakverecektakip.runtimeconfig.json
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\publish\alacakverecektakip.staticwebassets.endpoints.json
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\Npgsql.dll
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\games\OneDrive\Masaüstü\alacakverecek\obj\Debug\net6.0\alacakverecektakip.sourcelink.json
